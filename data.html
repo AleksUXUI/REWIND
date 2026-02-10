@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#C5221E",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102213",
+                    },
+                    fontFamily: {
+                        "display": ["Lato", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Lato', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .ios-safe-area {
+            padding-top: env(safe-area-inset-top);
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-[#111812] dark:text-white transition-colors duration-300">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden ios-safe-area">
+<!-- Header / Navigation -->
+<div class="flex items-center px-4 py-4 justify-between">
+<button class="text-[#111812] dark:text-white flex size-12 items-center justify-start focus:outline-none">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<div class="flex-1 text-center pr-12">
+<span class="text-xs font-bold uppercase tracking-widest text-[#111812]/50 dark:text-white/50">Euroshop 2026</span>
+</div>
+</div>
+<!-- Progress Indicator -->
+<div class="flex flex-col gap-3 px-6 py-2">
+<div class="flex justify-between items-end">
+<p class="text-sm font-bold uppercase tracking-wider text-primary">Final step</p>
+<p class="text-xs font-medium text-[#111812]/40 dark:text-white/40">100% Complete</p>
+</div>
+<div class="h-1.5 w-full rounded-sm bg-primary/20">
+<div class="h-full rounded-sm bg-primary" style="width: 100%;"></div>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-1 flex flex-col px-6 pt-10">
+<h1 class="text-4xl font-bold leading-tight tracking-tight mb-4">
+                And finally...
+            </h1>
+<p class="text-lg font-normal leading-relaxed text-[#111812]/70 dark:text-white/70 mb-10">
+                Leave us your details and enter our <span class="text-[#111812] dark:text-white font-semibold underline decoration-primary decoration-2">surprise pack</span> giveaway!
+            </p>
+<!-- Form Fields -->
+<div class="space-y-6">
+<div class="group">
+<label class="flex flex-col gap-2">
+<span class="text-sm font-bold ml-1 text-[#111812]/60 dark:text-white/60">Name</span>
+<div class="relative">
+<input class="w-full h-16 px-6 rounded-sm border-2 border-transparent bg-white dark:bg-white/5 focus:border-primary focus:ring-0 text-lg transition-all placeholder:text-[#111812]/30 dark:placeholder:text-white/20" placeholder="Your full name" type="text"/>
+<span class="material-symbols-outlined absolute right-5 top-1/2 -translate-y-1/2 text-[#111812]/20 dark:text-white/20">person</span>
+</div>
+</label>
+</div>
+<div class="group">
+<label class="flex flex-col gap-2">
+<span class="text-sm font-bold ml-1 text-[#111812]/60 dark:text-white/60">Company</span>
+<div class="relative">
+<input class="w-full h-16 px-6 rounded-sm border-2 border-transparent bg-white dark:bg-white/5 focus:border-primary focus:ring-0 text-lg transition-all placeholder:text-[#111812]/30 dark:placeholder:text-white/20" placeholder="Your company name" type="text"/>
+<span class="material-symbols-outlined absolute right-5 top-1/2 -translate-y-1/2 text-[#111812]/20 dark:text-white/20">business</span>
+</div>
+</label>
+</div>
+<div class="group">
+<label class="flex flex-col gap-2">
+<span class="text-sm font-bold ml-1 text-[#111812]/60 dark:text-white/60">Email</span>
+<div class="relative">
+<input class="w-full h-16 px-6 rounded-sm border-2 border-transparent bg-white dark:bg-white/5 focus:border-primary focus:ring-0 text-lg transition-all placeholder:text-[#111812]/30 dark:placeholder:text-white/20" placeholder="email@example.com" type="email"/>
+<span class="material-symbols-outlined absolute right-5 top-1/2 -translate-y-1/2 text-[#111812]/20 dark:text-white/20">mail</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Consent Checkboxes -->
+<div class="space-y-4 mt-8">
+<label class="group flex items-start gap-4 p-4 rounded-sm border-2 border-transparent bg-white/50 dark:bg-white/5 hover:border-primary/30 transition-all cursor-pointer">
+<div class="relative flex items-center pt-0.5">
+<input class="consent-check h-6 w-6 rounded-sm border-2 border-gray-300 dark:border-white/20 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-primary focus:ring-offset-0 focus:outline-none transition-all" type="checkbox"/>
+</div>
+<span class="text-sm font-medium leading-snug">I have read and accept the processing of my <span class="text-primary underline">personal data</span></span>
+</label>
+<label class="group flex items-start gap-4 p-4 rounded-sm border-2 border-transparent bg-white/50 dark:bg-white/5 hover:border-primary/30 transition-all cursor-pointer">
+<div class="relative flex items-center pt-0.5">
+<input class="consent-check h-6 w-6 rounded-sm border-2 border-gray-300 dark:border-white/20 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-primary focus:ring-offset-0 focus:outline-none transition-all" type="checkbox"/>
+</div>
+<span class="text-sm font-medium leading-snug">I have read and accept the <span class="text-primary underline">terms and conditions of the prize draw</span></span>
+</label>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="p-6 mt-8">
+<div class="flex flex-col gap-4">
+<button id="sendBtn" onclick="window.location.href='completado.html'" class="w-full h-16 bg-primary text-white font-bold text-xl rounded-sm shadow-lg shadow-primary/20 active:scale-[0.98] transition-transform flex items-center justify-center gap-2 opacity-50 pointer-events-none">
+                    Send
+                    <span class="material-symbols-outlined font-bold">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Decorative background elements -->
+<div class="fixed -bottom-20 -right-20 w-64 h-64 bg-primary/5 rounded-sm blur-3xl -z-10"></div>
+<div class="fixed top-40 -left-20 w-40 h-40 bg-primary/5 rounded-sm blur-2xl -z-10"></div>
+</div>
+<script>
+    const checks = document.querySelectorAll('.consent-check');
+    const sendBtn = document.getElementById('sendBtn');
+    function updateSendBtn() {
+        const allChecked = Array.from(checks).every(cb => cb.checked);
+        if (allChecked) {
+            sendBtn.classList.remove('opacity-50', 'pointer-events-none');
+        } else {
+            sendBtn.classList.add('opacity-50', 'pointer-events-none');
+        }
+    }
+    checks.forEach(cb => cb.addEventListener('change', updateSendBtn));
+</script>
+</body></html>

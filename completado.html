@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#C5221E",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102213",
+                    },
+                    fontFamily: {
+                        "display": ["Lato", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        .circular-gradient {
+            background: radial-gradient(circle at center, rgba(3, 22, 33, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between p-6">
+<div class="p-2 rounded-sm bg-white dark:bg-white/10 shadow-sm">
+<span class="material-symbols-outlined text-[#111812] dark:text-white">close</span>
+</div>
+<div class="flex items-center">
+<img src="4for.svg" alt="4foreverything" class="h-5" style="filter: brightness(0);">
+</div>
+<div class="w-10 h-10"></div>
+</header>
+<main class="flex-1 flex flex-col items-center px-6 pb-12">
+<!-- Hero Section -->
+<div class="relative w-full flex flex-col items-center justify-center py-8">
+<div class="absolute inset-0 circular-gradient -z-10"></div>
+<div class="w-32 h-32 bg-white dark:bg-white/5 rounded-sm shadow-2xl flex items-center justify-center mb-8 border-4 border-primary/10">
+<span class="material-symbols-outlined text-primary !text-6xl" style="font-variation-settings: 'FILL' 1">sports_esports</span>
+</div>
+<h1 class="text-[#111812] dark:text-white text-4xl font-bold text-center leading-tight mb-2">
+                The game continues
+            </h1>
+<p class="text-[#111812]/70 dark:text-white/70 text-base text-center max-w-[320px] mt-2">
+                Now go visit our partner <strong class="text-[#111812] dark:text-white">4foreverything</strong>'s stand: <strong class="text-primary">Stand xxxxx</strong>.
+            </p>
+<p class="text-[#111812]/70 dark:text-white/70 text-base text-center max-w-[320px] mt-2">
+                Scan their QR code and complete the experience.
+            </p>
+</div>
+<!-- Instruction Steps -->
+<div class="w-full mt-6 grid gap-4">
+<div class="bg-white dark:bg-white/5 p-4 rounded-sm border border-gray-100 dark:border-white/10 flex items-center gap-4">
+<div class="w-12 h-12 rounded-sm bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-2xl">location_on</span>
+</div>
+<div>
+<p class="font-bold text-base text-[#111812] dark:text-white">Step 1: Head to 4foreverything's stand</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Find them at Stand xxxxx in the exhibition hall</p>
+</div>
+</div>
+<div class="bg-white dark:bg-white/5 p-4 rounded-sm border border-gray-100 dark:border-white/10 flex items-center gap-4">
+<div class="w-12 h-12 rounded-sm bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-2xl">qr_code_scanner</span>
+</div>
+<div>
+<p class="font-bold text-base text-[#111812] dark:text-white">Step 2: Scan the QR code</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Complete the second challenge and unlock your gift</p>
+</div>
+</div>
+</div>
+<!-- Map / How to get there -->
+<div class="w-full mt-6 bg-white dark:bg-white/5 rounded-sm border border-gray-100 dark:border-white/10 overflow-hidden">
+<div class="p-4 border-b border-gray-100 dark:border-white/10 flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">map</span>
+<span class="font-bold text-[#111812] dark:text-white">How to get there</span>
+</div>
+<span class="text-xs text-primary font-bold bg-primary/10 px-3 py-1 rounded-sm">2 min walk</span>
+</div>
+<div class="h-48 bg-gray-100 dark:bg-white/5 relative flex items-center justify-center">
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="flex flex-col items-center gap-3 text-center px-6">
+<span class="material-symbols-outlined text-primary !text-5xl" style="font-variation-settings: 'FILL' 0, 'wght' 300">explore</span>
+<p class="text-sm font-bold text-[#111812]/60 dark:text-white/60">Exhibition floor plan</p>
+<p class="text-xs text-gray-400 dark:text-gray-500">Follow the signage to the 4foreverything stand</p>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-white dark:from-background-dark to-transparent p-4 flex items-center justify-between">
+<div class="flex items-center gap-2 bg-primary/10 backdrop-blur px-3 py-1.5 rounded-sm text-xs font-bold text-primary">
+<span class="material-symbols-outlined text-sm">near_me</span>
+Follow the arrows
+</div>
+<div class="flex items-center gap-1 text-xs text-gray-500">
+<span class="material-symbols-outlined text-sm">directions_walk</span>
+~2 min
+</div>
+</div>
+</div>
+</div>
+<!-- Donation Reminder -->
+<div class="w-full mt-6 bg-primary p-6 rounded-sm shadow-lg shadow-primary/20">
+<div class="flex items-start gap-4">
+<div class="bg-white/15 w-12 h-12 rounded-sm flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white text-2xl">volunteer_activism</span>
+</div>
+<div class="flex-1">
+<p class="text-white text-lg font-bold leading-tight">Remember</p>
+<p class="text-white/80 text-sm font-medium leading-relaxed mt-1">
+                            For each participant, we donate <span class="font-bold underline">€1</span> to the <strong>XXXX</strong> association.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="w-full mt-8 pt-4 flex flex-col gap-3">
+<button onclick="window.location.href='index.html'" class="w-full bg-primary text-white font-bold py-5 rounded-sm shadow-lg shadow-primary/20 hover:brightness-105 transition-all flex items-center justify-center gap-2">
+<span>Back to Home</span>
+<span class="material-symbols-outlined">home</span>
+</button>
+</div>
+</main>
+<div class="h-1 w-32 bg-[#111812]/10 dark:bg-white/10 rounded-sm mx-auto mb-2"></div>
+</body></html>

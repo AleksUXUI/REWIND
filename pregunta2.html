@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RetileFloor Quiz - EuroShop</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#C5221E",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102213",
+                    },
+                    fontFamily: {
+                        "display": ["Lato", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col transition-colors duration-300">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between px-6 py-4 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+<button onclick="window.location.href='pregunta1.html'" class="w-10 h-10 flex items-center justify-center rounded-sm hover:bg-black/5 dark:hover:bg-white/5 text-gray-800 dark:text-white transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div class="flex flex-col items-center">
+<img src="4for.svg" alt="4foreverything" class="h-7" style="filter: brightness(0);">
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-sm hover:bg-black/5 dark:hover:bg-white/5 text-gray-800 dark:text-white transition-colors">
+<span class="material-symbols-outlined">help_outline</span>
+</button>
+</header>
+<main class="flex-1 flex flex-col px-6 pb-10 max-w-md mx-auto w-full">
+<!-- Progress Section -->
+<div class="mt-8 mb-10">
+<div class="flex justify-between items-end mb-3">
+<div class="flex flex-col">
+<span class="text-xs font-bold text-primary uppercase tracking-tighter">Sustainability</span>
+<h2 class="text-xl font-bold text-gray-900 dark:text-white">Question 2 / 3</h2>
+</div>
+<span class="text-2xl font-bold text-gray-900 dark:text-white"><span id="percentNum">33</span><span class="text-sm text-gray-400 dark:text-gray-500">%</span></span>
+</div>
+<div class="h-3 w-full bg-gray-200 dark:bg-gray-800 rounded-sm overflow-hidden">
+<div id="progressBar" class="h-full bg-primary rounded-sm shadow-[0_0_12px_rgba(19,236,55,0.4)]" style="width: 33.33%; transition: width 1s cubic-bezier(0.22, 1, 0.36, 1);"></div>
+</div>
+</div>
+<!-- Question Section -->
+<div class="mb-10">
+<h3 class="text-2xl font-bold leading-tight text-gray-900 dark:text-white tracking-tight">
+                How many colors are there in the Rewind Flat collection?
+            </h3>
+</div>
+<!-- Options Container -->
+<div id="options" class="space-y-4 flex-1">
+<!-- Option A -->
+<button class="option-btn group relative w-full flex items-center gap-4 p-5 rounded-sm border-2 border-transparent bg-white dark:bg-gray-900 shadow-sm hover:shadow-md transition-all active:scale-[0.98] text-left" data-option="A">
+<div class="option-letter flex-shrink-0 w-10 h-10 rounded-sm bg-gray-100 dark:bg-gray-800 flex items-center justify-center font-bold text-gray-600 dark:text-gray-400 group-hover:bg-primary group-hover:text-white transition-colors">
+                    A
+                </div>
+<span class="text-base font-semibold text-gray-800 dark:text-gray-200 leading-snug">35</span>
+</button>
+<!-- Option B -->
+<button class="option-btn group relative w-full flex items-center gap-4 p-5 rounded-sm border-2 border-transparent bg-white dark:bg-gray-900 shadow-sm hover:shadow-md transition-all active:scale-[0.98] text-left" data-option="B">
+<div class="option-letter flex-shrink-0 w-10 h-10 rounded-sm bg-gray-100 dark:bg-gray-800 flex items-center justify-center font-bold text-gray-600 dark:text-gray-400 group-hover:bg-primary group-hover:text-white transition-colors">
+                    B
+                </div>
+<span class="text-base font-semibold text-gray-800 dark:text-gray-200 leading-snug">41</span>
+</button>
+<!-- Option C -->
+<button class="option-btn group relative w-full flex items-center gap-4 p-5 rounded-sm border-2 border-transparent bg-white dark:bg-gray-900 shadow-sm hover:shadow-md transition-all active:scale-[0.98] text-left" data-option="C">
+<div class="option-letter flex-shrink-0 w-10 h-10 rounded-sm bg-gray-100 dark:bg-gray-800 flex items-center justify-center font-bold text-gray-600 dark:text-gray-400 group-hover:bg-primary group-hover:text-white transition-colors">
+                    C
+                </div>
+<span class="text-base font-semibold text-gray-800 dark:text-gray-200 leading-snug">20</span>
+</button>
+<!-- Option D -->
+<button class="option-btn group relative w-full flex items-center gap-4 p-5 rounded-sm border-2 border-transparent bg-white dark:bg-gray-900 shadow-sm hover:shadow-md transition-all active:scale-[0.98] text-left" data-option="D">
+<div class="option-letter flex-shrink-0 w-10 h-10 rounded-sm bg-gray-100 dark:bg-gray-800 flex items-center justify-center font-bold text-gray-600 dark:text-gray-400 group-hover:bg-primary group-hover:text-white transition-colors">
+                    D
+                </div>
+<span class="text-base font-semibold text-gray-800 dark:text-gray-200 leading-snug">25</span>
+</button>
+</div>
+<!-- Action Footer -->
+<div class="mt-10 pb-6">
+<button id="confirmBtn" onclick="goNext()" class="w-full bg-gray-300 dark:bg-gray-700 text-gray-500 dark:text-gray-400 font-bold py-5 px-8 rounded-sm shadow-xl flex items-center justify-center gap-2 group transition-all cursor-not-allowed" disabled>
+<span>Confirm answer</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<p class="text-center text-xs text-gray-400 dark:text-gray-500 mt-4">
+                Tap an option to select it and confirm to continue.
+            </p>
+</div>
+</main>
+<!-- Background Decorative Element -->
+<div class="fixed top-0 right-0 -z-10 w-64 h-64 bg-primary/10 blur-[100px] rounded-sm"></div>
+<div class="fixed bottom-0 left-0 -z-10 w-80 h-80 bg-primary/5 blur-[120px] rounded-sm"></div>
+<script>
+    // Progress bar & percentage animation
+    const START_PERCENT = 33;
+    const TARGET_PERCENT = 66;
+    const BAR_WIDTH = '66.66%';
+
+    window.addEventListener('DOMContentLoaded', () => {
+        const bar = document.getElementById('progressBar');
+        const num = document.getElementById('percentNum');
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                bar.style.width = BAR_WIDTH;
+            });
+        });
+        let current = START_PERCENT;
+        const steps = TARGET_PERCENT - START_PERCENT;
+        const duration = 1000;
+        const stepTime = Math.max(Math.floor(duration / steps), 16);
+        const counter = setInterval(() => {
+            current++;
+            num.textContent = current;
+            if (current >= TARGET_PERCENT) clearInterval(counter);
+        }, stepTime);
+    });
+
+    let selected = null;
+    const options = document.querySelectorAll('.option-btn');
+    const confirmBtn = document.getElementById('confirmBtn');
+
+    options.forEach(btn => {
+        btn.addEventListener('click', () => {
+            options.forEach(b => {
+                b.classList.remove('border-primary', 'bg-primary/5', 'dark:bg-primary/10', 'shadow-lg', 'shadow-primary/10');
+                b.classList.add('border-transparent', 'bg-white', 'dark:bg-gray-900', 'shadow-sm');
+                const letter = b.querySelector('.option-letter');
+                letter.classList.remove('bg-primary', 'text-white');
+                letter.classList.add('bg-gray-100', 'dark:bg-gray-800', 'text-gray-600', 'dark:text-gray-400');
+            });
+            btn.classList.remove('border-transparent', 'bg-white', 'dark:bg-gray-900', 'shadow-sm');
+            btn.classList.add('border-primary', 'bg-primary/5', 'dark:bg-primary/10', 'shadow-lg', 'shadow-primary/10');
+            const letter = btn.querySelector('.option-letter');
+            letter.classList.remove('bg-gray-100', 'dark:bg-gray-800', 'text-gray-600', 'dark:text-gray-400');
+            letter.classList.add('bg-primary', 'text-white');
+            selected = btn.dataset.option;
+            confirmBtn.disabled = false;
+            confirmBtn.classList.remove('bg-gray-300', 'dark:bg-gray-700', 'text-gray-500', 'dark:text-gray-400', 'cursor-not-allowed');
+            confirmBtn.classList.add('bg-primary', 'hover:bg-primary/90', 'text-white', 'shadow-primary/20', 'active:scale-95');
+        });
+    });
+
+    function goNext() {
+        if (selected) {
+            window.location.href = 'pregunta3.html';
+        }
+    }
+</script>
+</body></html>

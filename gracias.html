@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Impacto y Consentimientos - EuroShop</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#C5221E",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102213",
+                    },
+                    fontFamily: {
+                        "display": ["Lato", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>body {
+    font-family: "Lato", sans-serif;
+    -webkit-tap-highlight-color: transparent
+    }
+.checkbox-custom:checked {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDdP-aQGecJSNN7LOrvYuKCuvnl4qlAx9aGA7BofTNQBIHKsnH8hZdTpHXdlz4RHX5Hhca3T6YkEWEs77o-Q3XLx3R-v_Qxkbiwjw33JIJAuyJV0AAi3H_9qoFHNYw_jRG6-Yso1r2bkZXB1qV6CqXhyXWx6s8EfVA0Iq0PLKU5ooe7yzmMX47y5EJ5gzeGzvwdvPePdQzjyVu8-xD3UiEiz-XrBN7JRUqKOClwY2MTUoUfnDlApQrsZQPCh3bFcKH18vyIo2jq6SFA)
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-[#111812] dark:text-white transition-colors duration-300">
+<div class="relative flex min-h-screen w-full flex-col max-w-[480px] mx-auto overflow-x-hidden">
+<!-- Header -->
+<div class="flex items-center p-4 pt-6 justify-between">
+<button onclick="window.location.href='pregunta3.html'" class="text-[#111812] dark:text-white flex size-12 shrink-0 items-center justify-center rounded-sm bg-white/50 dark:bg-white/10 backdrop-blur-md">
+<span class="material-symbols-outlined">arrow_back_ios_new</span>
+</button>
+<div class="flex flex-col items-center">
+<img src="4for.svg" alt="4foreverything" class="h-7" style="filter: brightness(0);">
+</div>
+<div class="size-12"></div> <!-- Spacer for balance -->
+</div>
+<!-- Main Content Scrollable Area -->
+<div class="flex-1 px-6 pt-4 pb-32">
+<!-- Impact Illustration Card -->
+<div class="relative mb-8 aspect-square w-full max-w-[280px] mx-auto">
+<div class="absolute inset-0 bg-primary/20 rounded-sm animate-pulse"></div>
+<div class="absolute inset-4 bg-primary/40 rounded-sm"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
+<div class="mb-4 bg-white dark:bg-[#F449FB] p-6 rounded-sm shadow-xl">
+<span class="material-symbols-outlined text-6xl text-primary" style="font-variation-settings: 'FILL' 1">favorite</span>
+</div>
+<div class="bg-white dark:bg-[#F449FB] px-4 py-1 rounded-sm shadow-md">
+<span class="text-2xl font-bold text-primary">1,00 €</span>
+</div>
+</div>
+<!-- Abstract floating dots for circular feeling -->
+<div class="absolute top-0 right-0 size-4 bg-primary rounded-sm"></div>
+<div class="absolute bottom-10 left-0 size-3 bg-primary/60 rounded-sm"></div>
+</div>
+<!-- Impact Message -->
+<div class="text-center mb-10">
+<h3 class="text-2xl md:text-3xl font-bold leading-tight tracking-tight mb-4">
+                    Thank you for participating.
+                </h3>
+<p class="text-lg opacity-70 font-medium mt-2">For every person who completes the challenge, we donate <span class="text-primary font-bold">€1</span> to the XXXX association.</p>
+<p class="text-sm opacity-50 font-medium mt-4">Your participation contributes to a more responsible model.</p>
+</div>
+</div>
+<!-- Sticky Bottom CTA Area -->
+<div class="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background-light via-background-light/95 to-transparent dark:from-background-dark dark:via-background-dark/95 max-w-[480px] mx-auto">
+<div class="flex flex-col gap-3">
+<!-- Progress hint -->
+<div class="flex justify-center gap-1.5 mb-2">
+<div class="h-1.5 w-1.5 rounded-sm bg-primary/30"></div>
+<div class="h-1.5 w-6 rounded-sm bg-primary"></div>
+<div class="h-1.5 w-1.5 rounded-sm bg-primary/30"></div>
+</div>
+<button onclick="window.location.href='data.html'" class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-sm h-16 px-8 bg-primary text-white text-lg font-bold transition-all active:scale-[0.98] shadow-lg shadow-primary/20">
+<span class="truncate">Continue</span>
+<span class="material-symbols-outlined ml-2">arrow_forward</span>
+</button>
+<p class="text-[10px] text-center opacity-50 uppercase tracking-tighter">
+                    EuroShop Circular Retail Initiative • 2026
+                </p>
+</div>
+<!-- iOS Home Indicator Safe Space -->
+<div class="h-4"></div>
+</div>
+</div>
+<!-- Background Decoration Elements -->
+<div class="fixed -top-20 -right-20 size-64 bg-primary/5 rounded-sm blur-3xl -z-10 pointer-events-none"></div>
+<div class="fixed top-1/2 -left-32 size-80 bg-primary/10 rounded-sm blur-3xl -z-10 pointer-events-none"></div>
+</body></html>

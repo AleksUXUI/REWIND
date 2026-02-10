@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Challenge Completed</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#C5221E",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102213",
+                    },
+                    fontFamily: {
+                        "display": ["Lato", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      font-family: 'Lato', sans-serif;
+      min-height: max(884px, 100dvh);
+    }
+    .confetti-gradient {
+        background: radial-gradient(circle at 30% 20%, rgba(3, 22, 33, 0.06) 0%, transparent 50%),
+                    radial-gradient(circle at 70% 80%, rgba(3, 22, 33, 0.04) 0%, transparent 50%);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111812] dark:text-white min-h-screen flex flex-col">
+<!-- Header -->
+<header class="flex items-center justify-center px-6 py-4">
+<div class="flex items-center">
+<img src="4for.svg" alt="4foreverything" class="h-7" style="filter: brightness(0);">
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center justify-center px-6 text-center">
+<div class="relative confetti-gradient w-full flex flex-col items-center py-8">
+<!-- Celebration Icon -->
+<div class="w-36 h-36 bg-primary/10 rounded-sm flex items-center justify-center mb-10 shadow-lg">
+<span class="material-symbols-outlined text-primary !text-7xl" style="font-variation-settings: 'FILL' 1">emoji_events</span>
+</div>
+<!-- Main Message -->
+<h1 class="text-4xl font-bold leading-tight tracking-tight mb-4 max-w-sm">
+            Your challenge has been completed.
+        </h1>
+<p class="text-lg text-[#111812]/70 dark:text-white/70 leading-relaxed max-w-sm mb-8">
+            Thank you for contributing to the circular economy!
+        </p>
+<!-- Decorative divider -->
+<div class="flex items-center gap-3 mb-8">
+<div class="h-px w-12 bg-primary/20"></div>
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1">eco</span>
+<div class="h-px w-12 bg-primary/20"></div>
+</div>
+<!-- Impact summary -->
+<div class="bg-white dark:bg-white/5 p-6 rounded-sm border border-gray-100 dark:border-white/10 w-full max-w-sm">
+<div class="flex items-center justify-center gap-3 mb-3">
+<span class="material-symbols-outlined text-primary text-2xl">volunteer_activism</span>
+<span class="text-2xl font-bold text-primary">€2 donated</span>
+</div>
+<p class="text-sm text-[#111812]/60 dark:text-white/60 leading-relaxed">
+                Both questionnaires completed. Your total contribution to the XXXX association has been doubled.
+            </p>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="p-6">
+<p class="text-[10px] text-center text-[#111812]/40 dark:text-white/40 uppercase tracking-widest font-medium">
+        Certified Sustainability • Euroshop 2026
+    </p>
+</footer>
+<!-- Background Decorative Elements -->
+<div class="fixed top-0 right-0 -z-10 w-64 h-64 bg-primary/10 blur-[100px] rounded-sm"></div>
+<div class="fixed bottom-0 left-0 -z-10 w-80 h-80 bg-primary/5 blur-[120px] rounded-sm"></div>
+</body></html>
